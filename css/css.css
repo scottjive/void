@@ -1,0 +1,248 @@
+.largef {
+	font-size: 72px;
+}
+.nomargin {
+	margin: 0px;
+}
+.nopadding {
+	padding: 0px;
+}
+.box {
+	border: 1px solid #dddddd;
+	background-color: white;
+	padding: 20px;
+	color: #443b39;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+
+body {
+	background-color: #b9d9ce;
+	margin: 0px;
+}
+.container-fluid.main {
+	padding: 20px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 130px;
+	overflow: hidden;
+}
+.container-fluid.main>.row {
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.btns-updown {
+	text-align:center;
+	height:100%;
+}
+.floatmid {
+	margin: 0 auto;
+	overflow: hidden;
+	height: auto;
+	width:120px;
+	padding-top:50%;
+}
+.btn-side {
+	border-radius: 0px;
+    width: 120px;
+    height: 120px;
+    border: none;
+    position:relative;
+}
+.btn-side:nth-of-type(1) {
+    margin-bottom: 40px;
+}
+.btn-side.up::after {
+	content: "";
+	background: white url("../img/arrowshift_gr.svg") no-repeat center;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.btn-side.down::after {
+	content: "";
+	background: white url("../img/arrowshift_gr.svg") no-repeat center;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+.btn-side.up:hover::after, .btn-side.down:hover::after {
+	opacity: 1;
+}
+@media (max-width: 1199px) {
+  .col-lg-2.btns-updown {
+  	display:none;
+  }
+}
+
+
+
+.container-fluid.main>.row>.col-lg-10 {
+	height: 100%;
+	overflow: hidden;
+}
+.container-fluid.main>.row>.col-lg-10>.row.box:not(.workspace) {
+	position: absolute;
+	left: 0px;
+	right: 20px;
+	bottom: 0px;
+	overflow: hidden;
+}
+.workspace {
+	position: absolute;
+	left: 0px;
+	right: 20px;
+	top: 0px;
+	bottom: 100px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+.workspace form>* {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+.workspace header {
+	height: 80px;
+	top: 0px;
+	padding: 20px;
+	padding-bottom: 0px;
+
+}
+.workspace div.row {
+	top: 80px;
+	bottom: 0px;
+	padding: 20px;
+	overflow: hidden;
+}
+.workspace form div.row>* {
+	overflow: hidden;
+	height: 100%;
+}
+.workspace div.row .col-xs-4 nav {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 42px;
+	overflow: hidden;
+}
+.workspace div.row .col-xs-4 .tab-content {
+	position: absolute;
+	top: 41px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.workspace div.row .col-xs-8 {
+	padding-left: 16px;
+}
+.workspace .tab-content	{
+	padding-top: 10px;
+}
+
+
+.row.white {
+	opacity: 0;
+	background-color: rgba(255,255,255,0.8);
+	color: #443b39;
+	height: 10vh;
+	margin-top: -15vh;
+	position:fixed;
+	padding: 10px 40px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.main.menu {
+	color:white;
+	width:100%;
+	height:150px;
+	bottom: 0px;
+	position: fixed;
+}
+.main.menu .row {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.main.menu .row.brown{
+	background-color: #443b39;
+	top:0;
+	bottom: 0;
+	position:relative;
+	width:100%;
+	height:9000px
+}
+.main.menu .container-fluid {
+	padding: 0px;
+}
+.main.menu .row.green {
+	background-color: #689384;
+	height: 40px;
+}
+
+.main.menu .row.green nav {
+	background-color: none;
+	height: 40px;
+}
+
+.main.menu .row.green nav .nav-pills > li > a {
+	border-radius: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: white;
+}
+.main.menu .row.green nav .nav-pills > li + li {
+	margin-left: 0px;
+}
+.main.menu .row.green nav .nav-pills > li.active > a,
+.main.menu .row.green nav .nav-pills > li.active > a:hover,
+.main.menu .row.green nav .nav-pills > li.active > a:focus {
+	background-color: rgba(255,255,255,0.2);
+}
+.main.menu .row.green nav .nav-pills > li > a:hover {
+	color: #443b39;
+}
+
+.main.menu .brown .col-xs-6 {
+	opacity: 0;
+}
+.main.menu .brown .col-xs-4 {
+	text-align: right;
+}
+.col-xs-4 .timer {
+	font-size: 72px;
+	padding-left: 65px;
+	background: transparent 0px 22px url("../img/arrow31_br.svg") no-repeat;
+	background-size: 45px 45px;
+}
+.brown .col-xs-4 .timer {
+	background-image: url("../img/arrow31.svg");
+}
+.col-xs-4 .timer.running {
+	background-image: url("../img/controls2_br.svg");
+}
+.brown .col-xs-4 .timer.running {
+	background-image: url("../img/controls2.svg");
+}
